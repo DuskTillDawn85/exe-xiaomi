@@ -1,0 +1,265 @@
+body {
+  width: 100%;
+  min-width: 1226px;
+}
+
+main {
+  width: 1226px;
+  margin: 0 auto;
+}
+
+/* 上方轮播图部分 */
+.banner-wrap {
+  width: 100%;
+  position: relative;
+}
+
+/* 轮播图片 */
+.carousel-wrap {
+  height: 460px;
+  width: 100%;
+  position: relative;
+}
+.carousel {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+/* 轮播图左侧菜单 */
+.category-wrap {
+  width: 234px;
+  height: 460px;
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(105, 101, 101, 0.6);
+}
+
+.category-wrap .item {
+  color: white;
+  display: flex;
+  height: 42px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-size: 14px;
+}
+.category-wrap .item:hover {
+  background: var(--main-color);
+}
+.category-wrap .item img {
+  width: 16px;
+}
+
+/* 轮播图下方展示条 */
+.hero-sub {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.hero-sub > img {
+  display: block;
+  width: 316px;
+  height: 170px;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+.hero-sub > img:hover {
+  box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+.channel-wrap {
+  width: 234px;
+  flex: none;
+}
+.channel-list {
+  margin: 0;
+  padding: 3px;
+  list-style-type: none;
+  font-size: 12px;
+  text-align: center;
+  background: #5f5750;
+  height: 170px;
+}
+.channel-wrap li {
+  position: relative;
+  float: left;
+  width: 76px;
+  height: 82px;
+  padding: 0 3px;
+}
+.channel-list a {
+  display: block;
+  padding-top: 18px;
+  text-overflow: ellipsis;
+  color: #fff;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.channel-list a:hover {
+  opacity: 1;
+}
+.channel-list a img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto 4px;
+}
+
+/* 商品展示分区 */
+.main-content-wrap {
+  background: #f5f5f5;
+  width: 100%;
+  margin-top: 25px;
+}
+.main-content {
+  width: 1225px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+.main-content .banner {
+  height: 120px;
+  margin: 22px 0;
+}
+.main-content h3 {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+}
+.main-content h3 div {
+  font-size: 16px;
+  color: var(--main-color);
+  filter: grayscale(1);
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.main-content h3 div:hover {
+  filter: grayscale(0);
+}
+.main-content h3 img {
+  margin-left: 5px;
+  width: 24px;
+}
+.content-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.vertical-poster {
+  width: 234px;
+  transition: .3s;
+}
+.vertical-poster:hover {
+  box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+}
+/* 商品列表区域 */
+.brick-list {
+  height: 614px;
+  width: 992px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* 商品列表卡片 */
+.brick-item {
+  height: 300px;
+  width: 233px;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  background: #fff;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.brick-item:hover {
+  box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+}
+/* 卡片图片 */
+.brick-item img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 18px;
+}
+/* 卡片名称 */
+.brick-item .title {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text);
+}
+/* 卡片描述 */
+.brick-item .desc {
+  margin: 0;
+  margin-bottom: 10px;
+  height: 18px;
+  font-size: 12px;
+  color: var(--sub-text);
+}
+/* 卡片价格 */
+.brick-item .price {
+  margin: 0;
+  margin-bottom: 14px;
+  color: var(--main-color);
+}
+
+/* 右侧工具栏 */
+.fixed-bar {
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+  z-index: 99;
+}
+
+.fixed-bar .item {
+  display: flex;
+  flex-direction: column;
+  width: 82px;
+  height: 90px;
+  margin-top: -1px;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  align-items: center;
+}
+
+.fixed-bar img {
+  width: 30px;
+  height: 30px;
+  margin: 15px 0 10px;
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+
+.fixed-bar .item:hover img,
+.fixed-bar .item:hover span {
+  filter: grayscale(0);
+  color: var(--main-color);
+}
+
+.fixed-bar span {
+  color: #757575;
+  -webkit-transition: color 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+}
+#backtotop {
+  margin-top: 14px;
+  display: none;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <title>我的购物车-小米商城</title>
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <div>
+          <img id="logo" src="../assets/img/logo-mi2.png" />
+          <h2 class="title">我的购物车</h2>
+          <p class="desc">温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+        </div>
+
+        <span id="login">登录 &nbsp;|&nbsp; 注册</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <!-- 商品栏 -->
+        <div class="cart-goods-list">
+          <div class="list-head clearfix">
+            <div class="col"><img src="./img/checkbox.svg" /> 全选</div>
+            <div class="col">&nbsp;</div>
+            <div class="col">商品名称</div>
+            <div class="col">单价</div>
+            <div class="col">数量</div>
+            <div class="col">小计</div>
+            <div class="col">操作</div>
+          </div>
+          <div class="list-item clearfix">
+            <div class="col"><img src="./img/checkbox-active.svg" /></div>
+            <div class="col"><img src="../detail/img/0.jpg" /></div>
+            <div class="col">九号卡丁车pro兰博基尼汽车定制版 黄色</div>
+            <div class="col">9999元</div>
+            <div class="col">1</div>
+            <div class="col">9999元</div>
+            <div class="col"><img src="./img/close.svg" /></div>
+          </div>
+        </div>
+
+        <!-- 结算栏 -->
+        <div class="cart-bar clearfix">
+          <div class="left">
+            继续购物
+            <span class="count">
+              共 <span class="highlight">1</span> 件物品，已选择
+              <span class="highlight">1</span> 件</span
+            >
+          </div>
+          <span class="right highlight"> 合计：<i> 9999</i> 元 <a href="#">去结算</a> </span>
+        </div>
+
+        <!-- 推荐商品区域 -->
+        <h2 class="rec-title"><span>买购物车中商品的人还买了</span></h2>
+        <ul class="rec-list clearfix">
+          <li class="rec-item">
+            <img src="./img/rec1.jpg" />
+            <div class="rec-name">小米电视 EA43 2022款</div>
+            <div class="rec-price">1188元</div>
+            <div class="rec-tips">17.8万人好评</div>
+            <button>加入购物车</button>
+          </li>
+          <li class="rec-item">
+            <img src="./img/rec2.jpg" />
+            <div class="rec-name">小米 Type-C to AUDIO转接线</div>
+            <div class="rec-price">9.9万元</div>
+            <div class="rec-tips">63.1万人好评</div>
+            <button>加入购物车</button>
+          </li>
+          <li class="rec-item">
+            <img src="./img/rec3.jpg" />
+            <div class="rec-name">小米活塞耳机</div>
+            <div class="rec-price">29元</div>
+            <div class="rec-tips">320.9万人好评</div>
+            <button>加入购物车</button>
+          </li>
+          <li class="rec-item">
+            <img src="./img/rec4.jpg" />
+            <div class="rec-name">小米平板5 Pro</div>
+            <div class="rec-price">2499元</div>
+            <div class="rec-tips">15.1万人好评</div>
+            <button>加入购物车</button>
+          </li>
+          <li class="rec-item">
+            <img src="./img/rec5.jpg" />
+            <div class="rec-name">Redmi Note 11 5G</div>
+            <div class="rec-price">1199元</div>
+            <div class="rec-tips">2.3万人好评</div>
+            <button>加入购物车</button>
+          </li>
+          <li class="rec-item">
+            <img src="./img/rec6.jpg" />
+            <div class="rec-name">智能刀筷砧板杀菌架</div>
+            <div class="rec-price">239元</div>
+            <div class="rec-tips">5721人好评</div>
+            <button>加入购物车</button>
+          </li>
+          <li class="rec-item">
+            <img src="./img/rec7.jpg" />
+            <div class="rec-name">小米电视 EA55 2022款</div>
+            <div class="rec-price">2029元</div>
+            <div class="rec-tips">17.8万人好评</div>
+            <button>加入购物车</button>
+          </li>
+          <li class="rec-item">
+            <img src="./img/rec8.jpg" />
+            <div class="rec-name">米家除螨仪</div>
+            <div class="rec-price">199</div>
+            <div class="rec-tips">5.4万人好评</div>
+            <button>加入购物车</button>
+          </li>
+          <li class="rec-item">
+            <img src="./img/rec9.jpg" />
+            <div class="rec-name">LUCKYMELIFE和田玉润福寿平安扣吊坠</div>
+            <div class="rec-price">759元</div>
+            <div class="rec-tips">356人好评</div>
+            <button>加入购物车</button>
+          </li>
+          <li class="rec-item">
+            <img src="./img/rec10.jpg" />
+            <div class="rec-name">Redmi Note 11 Pro</div>
+            <div class="rec-price">1799元</div>
+            <div class="rec-tips">7.6万人好评</div>
+            <button>加入购物车</button>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- 页脚信息 -->
+    <footer>
+      <div class="footer-wrap">
+        <div class="footer-service">
+          <ul class="list-service clearfix">
+            <li>
+              <a href="javascript:(0)"><img src="../assets/img/footer1.svg" /> 预约维修服务</a>
+            </li>
+            <li>
+              <a href="javascript:(0)"><img src="../assets/img/footer2.svg" />7天无理由退货</a>
+            </li>
+            <li>
+              <a href="javascript:(0)"><img src="../assets/img/footer3.svg" />15天免费换货</a>
+            </li>
+            <li>
+              <a href="javascript:(0)"><img src="../assets/img/footer4.svg" />满69包邮</a>
+            </li>
+            <li>
+              <a href="javascript:(0)"><img src="../assets/img/footer5.svg" />520余家售后网点</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links clearfix">
+          <dl class="col-links col-links-first">
+            <dt>帮助中心</dt>
+            <dd><a href="javascript:void(0);">账户管理</a></dd>
+            <dd><a href="javascript:void(0);">购物指南</a></dd>
+            <dd><a href="javascript:void(0);">订单操作</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>服务支持</dt>
+            <dd><a href="javascript:void(0);">售后政策</a></dd>
+            <dd><a href="javascript:void(0);">自助服务</a></dd>
+            <dd><a href="javascript:void(0);">相关下载</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>线下门店</dt>
+            <dd><a href="javascript:void(0);">小米之家</a></dd>
+            <dd><a href="javascript:void(0);">服务网点</a></dd>
+            <dd><a href="javascript:void(0);">授权体验店/专区</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>关于小米</dt>
+            <dd><a href="javascript:void(0);">了解小米</a></dd>
+            <dd><a href="javascript:void(0);">加入小米</a></dd>
+            <dd><a href="javascript:void(0);">投资者关系</a></dd>
+            <dd><a href="javascript:void(0);">企业社会责任</a></dd>
+            <dd><a href="javascript:void(0);">廉洁举报</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>关注我们</dt>
+            <dd><a href="javascript:void(0);">新浪微博</a></dd>
+            <dd><a href="javascript:void(0);">官方微信</a></dd>
+            <dd><a href="javascript:void(0);">联系我们</a></dd>
+            <dd><a href="javascript:void(0);">公益基金会</a></dd>
+          </dl>
+          <dl class="col-links">
+            <dt>特色服务</dt>
+            <dd><a href="javascript:void(0);">F 码通道</a></dd>
+            <dd><a href="javascript:void(0);">礼物码</a></dd>
+            <dd><a href="javascript:void(0);">防伪查询</a></dd>
+          </dl>
+          <div class="col-contact">
+            <p class="phone">400-100-5678</p>
+            <p>8:00-18:00（仅收市话费）</p>
+            <button class="btn-line-primary">人工客服</button>
+            <div class="follow">
+              关注小米：
+              <img src="../assets/img/wb.png" />
+              <img src="../assets/img/wx.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("login")
+        .addEventListener("click", () => (window.location.href = "../login/login.html"));
+      document
+        .getElementById("logo")
+        .addEventListener("click", () => (window.location.href = "../index.html"));
+    </script>
+  </body>
+</html>

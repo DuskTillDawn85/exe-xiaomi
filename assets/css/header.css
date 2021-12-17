@@ -1,0 +1,160 @@
+/* 页头上半部分 */
+.site-topbar {
+    position: relative;
+
+    height: 40px;
+    font-size: 12px;
+    color: var(--sub-text);
+    background: #333;
+    padding: 0 40px;
+}
+
+.site-topbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.site-topbar a {
+    color: var(--sub-text);
+    line-height: 40px;
+    display: inline-block;
+}
+
+.site-topbar a:hover {
+    color: #ddd;
+}
+
+.site-topbar .sep {
+    margin: 0 0.3em;
+    color: #424242;
+    font-family: sans-serif;
+}
+
+/* 购物车按钮 */
+.cart-wrap {
+    position: relative;
+    float: right;
+    width: 120px;
+    height: 40px;
+    margin-left: 15px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    font-size: 12px;
+}
+
+.cart-wrap>a>img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: -4px;
+    background: transparent;
+    filter: grayscale(1);
+    transition: .2s;
+}
+
+.cart-wrap>a {
+    position: relative;
+    z-index: 32;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #b0b0b0;
+    background: #424242;
+    transition: .2s;
+}
+
+.cart-wrap>a:hover {
+    background: white;
+    color: var(--main-color);
+}
+
+.cart-wrap>a:hover img {
+    filter: grayscale(0);
+    background: transparent;
+}
+
+/* 页头下半部分 */
+.site-header {
+    height: 100px;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.site-header-content {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.site-header .logo {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 0;
+}
+
+.site-header .nav-list {
+    position: relative;
+    height: 88px;
+    margin: 0;
+    font-size: 16px;
+    margin: 0 80px;
+}
+
+.site-header .nav-list a {
+    color: var(--text);
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 88px;
+    padding: 0 10px;
+}
+
+.site-header .nav-list a:hover {
+    color: var(--main-color);
+}
+
+.search-wrap {
+    height: 50px;
+    display: flex;
+}
+
+.search-wrap .btn {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border: 1px solid #e0e0e0;
+    flex: none;
+}
+
+.search-wrap .btn:hover {
+    background: var(--main-color);
+}
+
+.search-wrap input {
+    outline: none;
+    height: 50px;
+    padding: 0 10px;
+    width: 240px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+}
+
+.search-wrap img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 页头结束 */
